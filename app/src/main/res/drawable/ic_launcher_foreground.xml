@@ -1,30 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
+
+    <!-- 3D Lego Brick Drop Shadow -->
+    <path
+        android:fillColor="#33000000"
+        android:pathData="M26,38 h56 v46 h-56 Z" />
+
+    <!-- 3D Brick Main Front Face (Vibrant Red) -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M24,36 h56 v44 h-56 Z" />
+
+    <!-- Top Bevel Highlight (Light Red) -->
+    <path
+        android:fillColor="#FF6F60"
+        android:pathData="M24,36 h56 v3 h-56 Z" />
+
+    <!-- Bottom Edge Shadow (Dark Red) -->
+    <path
+        android:fillColor="#AB000D"
+        android:pathData="M24,77 h56 v3 h-56 Z" />
+
+    <!-- 2x2 Cylindrical Studs on Top -->
+    <!-- Stud 1 (Top Left) -->
+    <path
+        android:fillColor="#AB000D"
+        android:pathData="M38,36m-9,0a9,5 0,1 1,18 0a9,5 0,1 1,-18 0" />
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M38,34m-9,5a9,5 0,1 1,18 0a9,5 0,1 1,-18 0" />
+    <path
+        android:fillColor="#FF8A80"
+        android:pathData="M38,33m-7,3.5a7,3.5 0,1 1,14 0a7,3.5 0,1 1,-14 0" />
+
+    <!-- Stud 2 (Top Right) -->
+    <path
+        android:fillColor="#AB000D"
+        android:pathData="M66,36m-9,0a9,5 0,1 1,18 0a9,5 0,1 1,-18 0" />
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M66,34m-9,5a9,5 0,1 1,18 0a9,5 0,1 1,-18 0" />
+    <path
+        android:fillColor="#FF8A80"
+        android:pathData="M66,33m-7,3.5a7,3.5 0,1 1,14 0a7,3.5 0,1 1,-14 0" />
+
+    <!-- Cute Googly Eyes on Front (Numberblock Four style!) -->
+    <!-- Left Eye White -->
     <path
         android:fillColor="#FFFFFF"
-        android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
+        android:pathData="M43,55m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+    <!-- Left Eye Pupil -->
+    <path
+        android:fillColor="#1A1A1A"
+        android:pathData="M44,55m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,53m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+
+    <!-- Right Eye White -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M61,55m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+    <!-- Right Eye Pupil -->
+    <path
+        android:fillColor="#1A1A1A"
+        android:pathData="M62,55m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,53m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+
+    <!-- Cute Smiling Mouth -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M47,68 Q52,73 57,68" />
+
+    <!-- Golden Starlight Star badge floating at top right -->
+    <path
+        android:fillColor="#FFD700"
+        android:strokeColor="#FFF9C4"
         android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+        android:pathData="M81,19 L83,24 L88,25 L84,29 L85,34 L81,31 L77,34 L78,29 L74,25 L79,24 Z" />
 </vector>

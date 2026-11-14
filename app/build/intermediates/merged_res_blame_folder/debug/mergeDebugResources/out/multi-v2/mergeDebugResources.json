@@ -519,23 +519,6 @@
                     }
                 },
                 {
-                    "source": "/home/pepper-pancoast/BrickPuzzler/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "50",
-                        "endOffsets": "101"
-                    },
-                    "to": {
-                        "startLines": "195",
-                        "startColumns": "4",
-                        "startOffsets": "9594",
-                        "endColumns": "50",
-                        "endOffsets": "9640"
-                    }
-                },
-                {
                     "source": "/home/pepper-pancoast/.gradle/caches/9.1.0/transforms/bfa893674b0bc8cc3616645c67dfbd1e/transformed/transition-1.6.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
@@ -586,6 +569,23 @@
                         "endLines": "2,8,16,24,33,39,51,57,63,64,65,66,72,73,74,139,335,340,375,486,504,523",
                         "endColumns": "58,11,11,11,11,11,11,11,11,52,59,51,11,44,38,59,24,24,24,24,24,24",
                         "endOffsets": "204,377,596,815,1167,1337,1651,1839,2026,2079,2139,2191,2360,2405,2444,6602,19160,19318,20515,24349,25092,25875"
+                    }
+                },
+                {
+                    "source": "/home/pepper-pancoast/apps/BrickPuzzler/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "50",
+                        "endOffsets": "101"
+                    },
+                    "to": {
+                        "startLines": "195",
+                        "startColumns": "4",
+                        "startOffsets": "9594",
+                        "endColumns": "50",
+                        "endOffsets": "9640"
                     }
                 },
                 {

@@ -1,5 +1,11 @@
 package com.pancoast.brickpuzzler
 
+import android.content.ComponentName
+import android.content.Intent
+import android.content.pm.ShortcutInfo
+import android.content.pm.ShortcutManager
+import android.graphics.drawable.Icon
+import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -32,6 +38,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+        if (intent.getBooleanExtra("PIN_TO_HOME", false)) {
+            requestPinToHomeScreen()
+        }
+
         soundHapticManager = SoundHapticManager(this)
         speechManager = SpeechManager(this)
         starlightManager = StarlightManager(this)
@@ -42,6 +52,20 @@ class MainActivity : ComponentActivity() {
                 speechManager = speechManager,
                 starlightManager = starlightManager
             )
+        }
+    }
+
+    private fun requestPinToHomeScreen() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val shortcutManager = getSystemService(ShortcutManager::class.java)
+            if (shortcutManager != null && shortcutManager.isRequestPinShortcutSupported) {
+                val pinShortcutInfo = ShortcutInfo.Builder(this, "brick_puzzler_launcher_pin")
+                    .setIcon(Icon.createWithResource(this, R.mipmap.ic_launcher))
+                    .setShortLabel("Brick Puzzler")
+                    .setIntent(Intent(Intent.ACTION_MAIN).setComponent(ComponentName(this, MainActivity::class.java)))
+                    .build()
+                shortcutManager.requestPinShortcut(pinShortcutInfo, null)
+            }
         }
     }
 
